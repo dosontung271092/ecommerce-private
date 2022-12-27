@@ -1,0 +1,58 @@
+.border{
+    border: 1px solid red;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #777777;
+    --border-color: #dddddd;
+    --primay-color: #1d93d2;
+    --background-color: #00000008;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.page-width{
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .page-width{
+        width: 576px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-width{
+        width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .page-width{
+        width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-width{
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .page-width{
+        width: 1400px;
+    }
+}

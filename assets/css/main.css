@@ -1,0 +1,269 @@
+/* header__top */
+
+.header__top{
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-top__ul{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.header-top__ul--sm{
+    display: none;
+}
+
+.header-top__li{
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.header-top__li--lg{
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .header-top__ul--sm{
+        display: inline-block;
+    }
+
+    .header__top .page-width{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-top__li--lg{
+        display: inline-block;
+    }
+}
+
+.header-top__select{
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.header-top__li--separate::before{
+    content: "|";
+    margin: 0 18px;
+    color: var(--border-color);
+}
+
+/* header__middle */
+
+.header__middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-middle__logo{
+    padding: 15px 0;
+}
+
+.header-middle-logo__img{
+    max-width: 150px;
+}
+
+
+@media (min-width: 576px) {
+    .header-middle-logo__img{
+        max-width: 170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-middle-logo__img{
+        max-width: 218px;
+    }
+}
+
+.header-middle__right{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header-middle-right__item{
+    margin-left: 5px;
+    align-items: center;
+}
+
+.header-middle-right__item--myaccount{
+    border-right: 1px solid var(--border-color);
+    padding-right: 15px;
+    height: 30px;
+}
+
+.header-middle-right__myacount{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 30px;
+}
+
+.header-middle-right__item--xl{
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .header-middle-right__item--xl{
+        display: block;
+    }
+
+    .header-middle-right__item--noxl{
+        display: none;
+    }
+}
+
+.header-middle-right__item--cart{
+    position: relative;
+}
+
+.header-middle-right__icon{
+    width: 40px;
+}
+
+.header-middle-right-cart__notification{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primay-color);
+    border-radius: 50%;
+    padding: 3px 6px 1px 6px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header-middle-right__item--menu{
+    border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+    .header-middle-right__item--sm{
+        display: none;
+    }
+}
+
+.header-middle__search{
+    display: none;
+}
+
+.header-middle-search__form{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.header-middle-search-form__input,
+.header-middle-search-form__submit{
+    height: 37px;
+    border: none;
+    outline: none;
+}
+
+.header-middle-search-form__input{
+    padding: 5px 110px 5px 20px;
+}
+
+.header-middle-search-form__submit{
+    width: 100px;
+    border-radius: 5px;
+    background-color: var(--primay-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .header-middle__search{
+        display: block;
+    }
+
+    .header-middle-search__form{
+        width: 470px;
+    }
+}
+
+
+/* nav */
+.header__nav{
+    background-color: var(--primay-color);
+}
+
+.header__nav .page-width{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.header-nav__ul{
+    list-style: none;
+}
+
+.header-nav__li{
+    color: white;
+    font-weight: 600;
+}
+
+.header-nav__a{
+    display: block;
+    width: max-content;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.header-nav__ul--lg{
+    display: none;
+}
+
+.header-nav__ul--menu{
+    width: auto;
+}
+
+.header-nav__ul--freeship{
+    width: 100%;
+    text-align: right;
+}
+
+.header-nav-ul-freeship__value{
+    color: yellow;
+}
+
+
+@media (min-width: 1200px) {
+    .header-nav__ul--lg{
+        display: flex;
+    }
+}
+
+.header-nav__catbtn{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    padding:0;
+}
+
+
+.header-nav-category__icon{
+    height: 25px;
+}
+
+.header-nav-category__text{
+    padding-right: 5px;
+    font-weight: 600;
+}
