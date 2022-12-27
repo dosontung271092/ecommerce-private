@@ -47,6 +47,7 @@
     outline: none;
     color: var(--text-color);
     background-color: var(--background-color);
+    padding: 3px;
 }
 
 .header-top__li--separate::before{
@@ -143,8 +144,9 @@
     font-size: 12px;
 }
 
-.header-middle-right__item--menu{
-    border-radius: 10px;
+.header-middle-right__icon--menu{
+    border-radius: 5px;
+    background-color: var(--background-color)
 }
 
 @media (min-width: 992px) {
