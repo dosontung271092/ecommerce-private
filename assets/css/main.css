@@ -264,6 +264,7 @@
 }
 
 .header-nav-category__text{
+    width: max-content;
     padding-right: 5px;
     font-weight: 600;
 }
