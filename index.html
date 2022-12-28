@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    
+
+    <!-- Link Swiper's CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <div class="wrapper">
@@ -64,7 +69,7 @@
                         <span class="header-middle-right-cart__notification">3</span>
                     </div>
                     <div class="header-middle-right__item header-middle-right__item--sm">
-                        <img class="header-middle-right__icon header-middle-right__icon--menu" src="./assets/img/icon/bar.png">
+                        <img class="header-middle-right__icon header-middle-right__icon--menu" id="header-middle-right__icon--menu" src="./assets/img/icon/bar.png">
                     </div>
                 </div>
             </div>
@@ -72,7 +77,7 @@
             <nav class="header__nav">
                 <div class="page-width">
                     <div class="header-nav__category">
-                        <button class="header-nav__catbtn">
+                        <button class="header-nav__catbtn" id="header-nav__catbtn">
                             <img class="header-nav-category__icon" src="./assets/img/icon/category.png">
                             <span class="header-nav-category__text">Danh mục</span>
                         </button>
@@ -95,13 +100,147 @@
         </header>
 
         <div class="content">
+            <div class="page-width">
+                <!-- Swiper library -->
+                <div class="swiper main__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main-slider__item">
+                            <img class="main-slider__img" src="./assets/img/slide/slide03.jpg">
+                            <div class="main-slider__content">
+                                <p class="main-slider__sale">50% Discount</p>
+                                <h3 class="main-slider__title">
+                                    Best Organic Skincare Serums
+                                </h3>
+                                <p class="main-slider__description">Nguyên liệu nhập ngoại</p>
+                                <button class="main-slider__viewbtn">
+                                    SHOP NOW
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main-slider__item">
+                            <img class="main-slider__img" src="./assets/img/slide/slide04.jpg">
+                            <div class="main-slider__content">
+                                <p class="main-slider__sale">50% Discount</p>
+                                <h3 class="main-slider__title">
+                                    Best Organic Skincare Serums
+                                </h3>
+                                <p class="main-slider__description">Nguyên liệu nhập ngoại</p>
+                                <button class="main-slider__viewbtn">
+                                    SHOP NOW
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- 
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>  
+                    -->
+               
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
         
-
         <footer class="footer">
             
         </footer>
+
+        <!-- Modal category layout -->
+        <div class="modal" id="modal__category">
+            <div class="modal__overlay"></div>
+            <div class="modal__body--left">
+                <div class="modal__header">
+                    <div class="modal__width">
+                        <h3 class="modal__title">Danh mục sản phẩm</h3>
+                        <img class="modal__clsicon" src="./assets/img/icon/close.png">
+                    </div>
+                </div>
+
+                <div class="modal__body">
+                    <div class="modal__width">
+                        <ul class="modal-body__ul">
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Thực phẩm dành cho người già</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Thực phẩm dành cho người trung tuổi</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Thực phẩm dành cho trẻ em</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Thực phẩm chăm sóc sắc đẹp</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Thực phẩm tăng cường sinh lý</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal menu layout -->
+        <div class="modal" id="modal__menu">
+            <div class="modal__overlay"></div>
+            <div class="modal__body--right">
+                <div class="modal__header">
+                    <div class="modal__width">
+                        <h3 class="modal__title">Menu</h3>
+                        <img class="modal__clsicon" src="./assets/img/icon/close.png">
+                    </div>
+                </div>
+
+                <div class="modal__body">
+                    <div class="modal__width">
+                        <ul class="modal-body__ul">
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Menu 1</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Menu 2</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Menu 3</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Menu 4</a></li>
+                            <li class="modal-body__li"><a href="" class="modal-body__a">Menu 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".main__slider", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            autoplay: true,
+        });
+    </script>
+
+    <script>
+        // Modal category
+        document.getElementById('header-nav__catbtn').onclick = () => {
+            document.getElementById('modal__category').style.display = "block";
+        }
+
+        var clickHideModalCategory = document.querySelectorAll('#modal__category .modal__clsicon, #modal__category .modal__overlay');
+        clickHideModalCategory.forEach(( e ) => {
+            e.onclick = () => {
+                document.getElementById('modal__category').style.display = "none";
+            }
+        });
+
+        // Modal menu
+        document.getElementById('header-middle-right__icon--menu').onclick = () => {
+            document.getElementById('modal__menu').style.display = "block";
+        }
+
+        var clickHideModalMenu = document.querySelectorAll('#modal__menu .modal__clsicon, #modal__menu .modal__overlay');
+        clickHideModalMenu.forEach(( e ) => {
+            e.onclick = () => {
+                document.getElementById('modal__menu').style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>

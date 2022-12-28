@@ -9,6 +9,8 @@
     --border-color: #dddddd;
     --primay-color: #1d93d2;
     --background-color: #0000000d;
+
+    --duration-default: .2s;
 }
 
 * {
@@ -55,4 +57,102 @@ html {
     .page-width{
         width: 1400px;
     }
+}
+
+
+
+/* Modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes LeftToRight {
+    from {
+       left: -300px;
+    }
+    to {
+       left: 0px;
+    }
+}
+
+.modal__body--left{
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    animation: LeftToRight linear 0.3s;
+}
+
+.modal__width{
+    padding: 0 15px;
+}
+
+@keyframes RightToLeft {
+    from {
+       right: -300px;
+    }
+    to {
+       right: 0px;
+    }
+}
+
+.modal__body--right{
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    animation: RightToLeft linear 0.3s;
+}
+
+.modal__header{
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modal__title{
+    font-size: 16px;
+}
+
+.modal__header .modal__width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__clsicon{
+    height: 40px;
+}
+
+.modal__clsicon:hover{
+    cursor: pointer;
+    background-color: var(--background-color);
+}
+
+/* Slider */
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
