@@ -151,7 +151,6 @@
     height: 30px;
     background-color: var(--background-color);
     border-radius: 50%;
-    /* border: 1px solid black; */
 }
 
 .modal-body-cart__thumnail{
@@ -162,13 +161,11 @@
 }
 
 .modal-body-cart__content{
-    /* border: 1px solid black; */
 }
 
 .modal-body-cart-content__title{
     font-size: 14px;
     font-weight: normal;
-    /* border: 1px solid black; */
     margin: 0;
     
 }
@@ -177,7 +174,6 @@
     font-size: 12px;
     margin: 15px 0 0 0;
     font-weight: bold;
-    /* border: 1px solid black; */
 }
 
 
@@ -194,7 +190,7 @@
 }
 
 .modal-footer-cart-bottom__btn{
-    padding: 10px 32px;
+    padding: 10px 25px;
     font-size: 11px;
     border: none;
     border-radius: 5px;
