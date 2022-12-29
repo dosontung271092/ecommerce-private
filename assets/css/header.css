@@ -220,17 +220,21 @@
     list-style: none;
 }
 
-.header-nav__li{
+.header-nav-menu__li{
     color: white;
     font-weight: 600;
 }
 
-.header-nav__a{
+.header-nav-menu__a{
     display: block;
     width: max-content;
     color: white;
     text-decoration: none;
     margin: 0 15px;
+}
+
+.header-nav-menu__a:hover{
+    color: var(--yellow-color);
 }
 
 .header-nav__ul--lg{

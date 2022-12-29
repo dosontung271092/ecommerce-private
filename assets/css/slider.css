@@ -50,6 +50,11 @@
     font-weight: 600;
 }
 
+.main-slider__viewbtn:hover{
+    cursor: pointer;
+    color: var(--yellow-color)
+}
+
 @media (min-width: 576px) {
 
     .main-slider__img {
@@ -189,6 +194,7 @@
 }
 
 .next-slider__sale{
+    font-weight: 600;
     margin: 0;
     font-size: 18px;
     color: var(--primay-color);
@@ -209,4 +215,9 @@
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.next-slider__viewbtn:hover{
+    cursor: pointer;
+    color: var(--yellow-color)
 }
