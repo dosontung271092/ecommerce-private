@@ -91,7 +91,7 @@
 
 .modal__clsicon{
     height: 40px;
-    margin-right: -14px;
+    margin-right: -10px;
 }
 
 .modal__clsicon:hover{
@@ -151,6 +151,10 @@
     height: 30px;
     background-color: var(--background-color);
     border-radius: 50%;
+}
+
+.modal-body-cart__deleteicon:hover{
+    background-color: var(--btn-hover-color);
 }
 
 .modal-body-cart__thumnail{

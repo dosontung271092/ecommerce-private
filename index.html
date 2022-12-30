@@ -7,19 +7,12 @@
     <title>Ecommerce</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/base.css">
-
     <link rel="stylesheet" href="/assets/css/modal.css">
     <link rel="stylesheet" href="/assets/css/slider.css">
     <link rel="stylesheet" href="/assets/css/header.css">
-
     <link rel="stylesheet" href="/assets/css/main.css">
-
-    <!-- Link Swiper's CSS -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 </head>
 <body>
     <div class="wrapper">
@@ -85,7 +78,7 @@
                     <div class="header-nav__category">
                         <button class="header-nav__catbtn" id="header-nav__catbtn">
                             <img class="header-nav-category__icon" src="./assets/img/icon/category.png">
-                            <span class="header-nav-category__text">Danh mục</span>
+                            <span class="header-nav-category__text">Danh mục sản phẩm</span>
                         </button>
                     </div>
                     
@@ -110,71 +103,109 @@
             <!-- Swiper -->
             <div class="page-width">
                 <div class="slider">
-                    <div class="swiper main__slider">
+                    <div class="slider__main swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide main-slider__item">
-                                <img class="main-slider__img" src="./assets/img/slide/slide03.jpg">
-                                <div class="main-slider__content">
-                                    <p class="main-slider__sale">Sale 50%</p>
-                                    <h3 class="main-slider__title">
+                            <div class="swiper-slide slider-main__item">
+                                <img class="slider-main__img" src="./assets/img/slide/slide03.jpg">
+                                <div class="slider-main__content">
+                                    <p class="slider-main__sale">Sale 50%</p>
+                                    <h3 class="slider-main__title">
                                         Chăm sóc da tự nhiên
                                     </h3>
-                                    <p class="main-slider__description">Nguyên liệu nhập ngoại</p>
-                                    <button class="main-slider__viewbtn">
+                                    <p class="slider-main__description">Nguyên liệu nhập ngoại</p>
+                                    <button class="slider-main__viewbtn">
                                         xem chi tiết
                                     </button>
                                 </div>
                             </div>
-                            <div class="swiper-slide main-slider__item">
-                                <img class="main-slider__img" src="./assets/img/slide/slide04.jpg">
-                                <div class="main-slider__content">
-                                    <p class="main-slider__sale">Sale 50%</p>
-                                    <h3 class="main-slider__title">
+                            <div class="swiper-slide slider-main__item">
+                                <img class="slider-main__img" src="./assets/img/slide/slide04.jpg">
+                                <div class="slider-main__content">
+                                    <p class="slider-main__sale">Sale 50%</p>
+                                    <h3 class="slider-main__title">
                                         Chăm sóc da tự nhiên
                                     </h3>
-                                    <p class="main-slider__description">Nguyên liệu nhập ngoại</p>
-                                    <button class="main-slider__viewbtn">
+                                    <p class="slider-main__description">Nguyên liệu nhập ngoại</p>
+                                    <button class="slider-main__viewbtn">
                                         xem chi tiết
                                     </button>
                                 </div>
                             </div>
                         </div>
-    
-                        <!-- 
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>  
-                        -->
-                   
                         <div class="swiper-pagination"></div>
                     </div>
     
-                    <div class="next-slider">
-                        <div class="next-slider__item">
-                            <img class="next-slider__img" src="./assets/img/slide/slide01.jpg">
-                            <div class="next-slider__content">
-                                <p class="next-slider__sale">Sale 50%</p>
-                                <h3 class="next-slider__title">
+                    <div class="slider__next">
+                        <div class="slider-next__item">
+                            <img class="slider-next__img" src="./assets/img/slide/slide01.jpg">
+                            <div class="slider-next__content">
+                                <p class="slider-next__sale">Sale 50%</p>
+                                <h3 class="slider-next__title">
                                     Chăm sóc da tự nhiên
                                 </h3>
-                                <button class="next-slider__viewbtn">
+                                <button class="slider-next__viewbtn">
                                     xem chi tiết
                                 </button>
                             </div>
                         </div>
-                        <div class="next-slider__item">
-                            <img class="next-slider__img" src="./assets/img/slide/slide01.jpg">
-                            <div class="next-slider__content">
-                                <p class="next-slider__sale">Sale 50%</p>
-                                <h3 class="next-slider__title">
+                        <div class="slider-next__item">
+                            <img class="slider-next__img" src="./assets/img/slide/slide01.jpg">
+                            <div class="slider-next__content">
+                                <p class="slider-next__sale">Sale 50%</p>
+                                <h3 class="slider-next__title">
                                     Chăm sóc da tự nhiên
                                 </h3>
-                                <button class="next-slider__viewbtn">
+                                <button class="slider-next__viewbtn">
                                     xem chi tiết
                                 </button>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                </div> <!-- End slider -->
+                
+                <div class="product">
+                    <div class="product__latest swiper">
+                    
+                        <div class="product-latest__header">
+                            <h3 class="product-latest-header__title">
+                                Sản phẩm mới nhất
+                            </h3>  
+                            <div class="product-latest-header__navigation">
+                                <img src="./assets/img/icon/previous.png" class="product-latest-header__btn product-latest-header__btn--next">
+                                <img src="./assets/img/icon/next.png" class="product-latest-header__btn product-latest-header__btn--prev">
+                            </div>
+                        </div>
+                    
+                        <div class="swiper-wrapper product-latest-slider__wrapper">
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                            <div class="swiper-slide product-latest-slider__item">
+                                <img class="product-latest-slider__img" src="./assets/img/product/product01.jpg">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div> <!-- End product -->
 
             </div>
         </div>
@@ -269,7 +300,7 @@
                         <ul class="modal-body__ul">
                             <li class="modal-body__li">
                                 <a href="" class="modal-body__a modal-body__a--cart">
-                                    <img class="modal-body-cart__deleteicon" src="/assets/img/icon/delete.png" alt="">
+                                    <img class="modal-body-cart__deleteicon" title="Xoá sản phẩm" src="/assets/img/icon/delete.png" alt="">
                                     <img class="modal-body-cart__thumnail" src="/assets/img/product/product01.jpg" alt="">
                                     <div class="modal-body-cart__content">
                                         <h3 class="modal-body-cart-content__title">Thực phẩm dành cho người già</h3>
@@ -279,7 +310,7 @@
                             </li>
                             <li class="modal-body__li">
                                 <a href="" class="modal-body__a modal-body__a--cart">
-                                    <img class="modal-body-cart__deleteicon" src="/assets/img/icon/delete.png" alt="">
+                                    <img class="modal-body-cart__deleteicon" title="Xoá sản phẩm" src="/assets/img/icon/delete.png" alt="">
                                     <img class="modal-body-cart__thumnail" src="/assets/img/product/product01.jpg" alt="">
                                     <div class="modal-body-cart__content">
                                         <h3 class="modal-body-cart-content__title">Thực phẩm dành cho người trung tuổi</h3>
@@ -289,7 +320,7 @@
                             </li>
                             <li class="modal-body__li">
                                 <a href="" class="modal-body__a modal-body__a--cart">
-                                    <img class="modal-body-cart__deleteicon" src="/assets/img/icon/delete.png" alt="">
+                                    <img class="modal-body-cart__deleteicon" title="Xoá sản phẩm" src="/assets/img/icon/delete.png" alt="">
                                     <img class="modal-body-cart__thumnail" src="/assets/img/product/product01.jpg" alt="">
                                     <div class="modal-body-cart__content">
                                         <h3 class="modal-body-cart-content__title">Thực phẩm dành cho trẻ em</h3>
@@ -324,56 +355,11 @@
             </div>
         </div>
 
-    </div>
+    </div> <!-- Wrapper -->
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/swiper-config.js"></script>
+    <script src="/assets/js/modal.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".main__slider", {
-            cssMode: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            mousewheel: true,
-            keyboard: true,
-            autoplay: true,
-        });
-    </script>
-
-    <script>
-        // Modal category
-        document.getElementById('header-nav__catbtn').onclick = () => {
-            document.getElementById('modal__category').style.display = "block";
-        }
-
-        // Modal menu
-        document.getElementById('header-middle-right__icon--menu').onclick = () => {
-            document.getElementById('modal__menu').style.display = "block";
-        }
-
-        // Modal search
-        document.getElementById('header-middle-right__icon--search').onclick = () => {
-            document.getElementById('modal__search').style.display = "block";
-        }
-
-        // Modal cart
-        document.getElementById('header-middle-right__icon--cart').onclick = () => {
-            document.getElementById('modal__cart').style.display = "block";
-        }
-
-        document.querySelectorAll('.modal__clsicon, .modal__overlay').forEach(( e ) => {
-            e.onclick = () => {
-                document.querySelectorAll('.modal').forEach((e) => {
-                    e.style.display = "none";
-                });
-            }
-        });
-    </script>
 </body>
 </html>

@@ -9,10 +9,11 @@
     --border-color: #dddddd;
     --primay-color: #1d93d2;
     --yellow-color: #ffde00;
-
     --background-color: #0000000d;
 
-    --duration-default: .2s;
+    --yellow-hover-color: #dabd02;
+    --primary-hover-color: #1879ad;
+    --btn-hover-color: rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -60,9 +61,6 @@ html {
         width: 1400px;
     }
 }
-
-
-
 
 /* Slider */
 .swiper-slide {
