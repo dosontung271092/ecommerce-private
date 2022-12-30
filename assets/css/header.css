@@ -50,6 +50,11 @@
     margin-right: 5px
 }
 
+.header-top__select:hover{
+    background-color: var(--btn-hover-color);
+    cursor: pointer;
+}
+
 .header-top__li--separate::before{
     content: "|";
     margin: 0 18px;

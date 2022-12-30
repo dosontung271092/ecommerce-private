@@ -207,8 +207,18 @@
     color: white;
 }
 
+.modal-footer-cart-bottom__btn--view:hover{
+    background-color: var(--primary-hover-color);
+    cursor: pointer;
+}
+
 .modal-footer-cart-bottom__btn--checkout{
     background-color: var(--yellow-color);
+}
+
+.modal-footer-cart-bottom__btn--checkout:hover{
+    background-color: var(--yellow-hover-color);
+    cursor: pointer;
 }
 
 .modal-footer-cart__label{
@@ -218,5 +228,5 @@
 .modal-footer-cart__value{
     font-size: 13px;
     font-weight: bold;
-    color:rgb(209, 30, 30);
+    color: var(--price-color);
 }
