@@ -54,24 +54,23 @@ var swiper = new Swiper(".post__latest", {
     },
     breakpoints: {
         "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 5,
+            slidesPerView: 1
         },
         "@0.65": {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 20,
         },
         "@1.00": {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 25,
         },
         "@1.65": {
             slidesPerView: 4,
-            spaceBetween: 15,
+            spaceBetween: 25,
         },
         "@2.00": {
             slidesPerView: 5,
-            spaceBetween: 25,
+            spaceBetween: 30,
         },
     }
 });

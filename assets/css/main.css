@@ -16,6 +16,7 @@
 .product-row-header__title{
     font-size: 22px;
     margin: 0;
+    color: var(--title-color);
 }
 
 .product-row-header__navigation{
@@ -131,6 +132,7 @@
 .post-row-header__title{
     font-size: 22px;
     margin: 0;
+    color: var(--title-color);
 }
 
 .post-row-header__navigation{
@@ -189,6 +191,7 @@
 .post-row__title{
     font-size: 16px;
     margin: 10px 0 0 0;
+    color: var(--title-color);
 }
 
 .post-row__description{
@@ -209,6 +212,50 @@
 }
 
 .post-row__viewlink:hover{
-    background-color: var(--primary-hover-color);
+    color: var(--primary-hover-color);
     cursor: pointer;
+}
+
+.service{
+    margin-top: 60px;
+    background-color: var(--primay-color);
+    padding: 17px 0;
+}
+
+.service__row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-row__item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.service-row__item--separate{
+    border-right: 1px solid var(--border-color);
+}
+
+.service-row-item__icon{
+    height: 50px;
+}
+
+.service-row-item__text{
+    font-size: 10px;
+    color: white;
+}
+
+@media (min-width: 576px) {
+    .service-row-item__text{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .service-row-item__text{
+        font-size: 14px;
+    }
 }
