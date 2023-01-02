@@ -89,7 +89,7 @@
 }
 
 .product-row-price__origin{
-    color: var(--primay-color);
+    color: var(--primary-color);
     font-size: 13px;
 }
 
@@ -102,7 +102,7 @@
 
 .product-row__viewbtn{
     margin: 15px 0 0 0;
-    background-color: var(--primay-color);
+    background-color: var(--primary-color);
     border: none;
     color: white;
     padding: 10px 15px;
@@ -185,7 +185,7 @@
 .post-row__date{
     margin: 15px 0 0 0;
     font-size: 14px;
-    color: var(--primay-color);
+    color: var(--primary-color);
 }
 
 .post-row__title{
@@ -206,7 +206,7 @@
 .post-row__viewlink{
     margin-top: 15px;
     font-size: 12px;
-    color: var(--primay-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -218,8 +218,14 @@
 
 .service{
     margin-top: 60px;
-    background-color: var(--primay-color);
-    padding: 17px 0;
+    background-color: var(--primary-color);
+
+}
+
+@media (min-width: 992px) {
+    .service{
+        padding: 17px 0;
+    }
 }
 
 .service__row{

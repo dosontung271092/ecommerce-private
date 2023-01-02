@@ -24,7 +24,7 @@
 .slider-main__sale{
     margin: 0;
     font-size: 18px;
-    color: var(--primay-color);
+    color: var(--primary-color);
 }
 
 .slider-main__title{
@@ -40,7 +40,7 @@
 
 .slider-main__viewbtn{
     margin: 15px 0 0 0;
-    background-color: var(--primay-color);
+    background-color: var(--primary-color);
     border: none;
     color: white;
     padding: 8px 15px;
@@ -200,7 +200,7 @@
 .slider-next__sale{
     margin: 0;
     font-size: 18px;
-    color: var(--primay-color);
+    color: var(--primary-color);
 }
 
 .slider-next__title{
@@ -211,7 +211,7 @@
 
 .slider-next__viewbtn{
     margin: 15px 0 0 0;
-    background-color: var(--primay-color);
+    background-color: var(--primary-color);
     border: none;
     color: white;
     padding: 8px 15px;

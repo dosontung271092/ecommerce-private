@@ -135,7 +135,7 @@
 .modal-search-form__submit{
     width: 100px;
     border-radius: 5px;
-    background-color: var(--primay-color);
+    background-color: var(--primary-color);
     color: white;
     text-transform: uppercase;
     font-weight: bold;
@@ -203,7 +203,7 @@
 }
 
 .modal-footer-cart-bottom__btn--view{
-    background-color: var(--primay-color);
+    background-color: var(--primary-color);
     color: white;
 }
 
