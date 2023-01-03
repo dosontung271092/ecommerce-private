@@ -228,3 +228,36 @@
     font-weight: bold;
     color: var(--price-color);
 }
+
+/* Modal product sidebar */
+.modal-product-sidebar__header{
+    padding: 0 15px;
+    font-size: 16px;
+    color: var(--title-color)
+}
+
+.modal-product-sidebar__ul{
+    list-style: none;
+    padding: 0;
+}
+
+.modal-product-sidebar__li{
+    color: var(--title-color);
+    padding: 20px 0;
+}
+
+.modal-product-sidebar-price__input{
+    width: 50px;
+}
+
+.modal-product-sidebar-brand__ul{
+    list-style: none;
+    padding: 0;
+}
+
+.modal-product-sidebar-brand__li{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -164,7 +164,6 @@
 .product-sidebar__li{
     color: var(--title-color);
     padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .product-sidebar-price__input{
@@ -181,4 +180,24 @@
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.modal-productfilter__footer{
+    border-top: 1px solid var(--border-color);
+    padding: 15px 0;
+}
+
+.modal-productfilter-footer__btn{
+    padding: 10px 25px;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.modal-productfilter-footer__btn:hover{
+    background-color: var(--primary-hover-color);
 }
