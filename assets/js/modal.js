@@ -4,21 +4,27 @@ document.getElementById('header-nav__catbtn').onclick = () => {
 }
 
 // Modal menu
-document.getElementById('header-middle-right__icon--menu').onclick = () => {
-    document.getElementById('modal__menu').style.display = "block";
-}
+document.querySelectorAll('.header-middle-right__icon--menu').forEach( e => {
+    e.onclick = () => {
+        document.getElementById('modal__menu').style.display = "block";
+    }
+});
 
 // Modal search
-document.getElementById('header-middle-right__icon--search').onclick = () => {
-    document.getElementById('modal__search').style.display = "block";
-}
+document.querySelectorAll('.header-middle-right__icon--search').forEach( e => {
+    e.onclick = () => {
+        document.getElementById('modal__search').style.display = "block";
+    }
+});
 
 // Modal cart
-document.getElementById('header-middle-right__icon--cart').onclick = () => {
-    document.getElementById('modal__cart').style.display = "block";
-}
+document.querySelectorAll('.header-middle-right__icon--cart').forEach( e => {
+    e.onclick = () => {
+        document.getElementById('modal__cart').style.display = "block";
+    }
+});
 
-document.querySelectorAll('.modal__clsicon, .modal__overlay').forEach(( e ) => {
+document.querySelectorAll('.modal__clsicon, .modal__overlay').forEach( e => {
     e.onclick = () => {
         document.querySelectorAll('.modal').forEach((e) => {
             e.style.display = "none";

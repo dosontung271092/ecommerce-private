@@ -7,7 +7,45 @@ var swiper = new Swiper(".slider__main", {
     },
     mousewheel: true,
     keyboard: true,
-    autoplay: true,
+    autoplay: {
+        delay: 5000,
+    },
+});
+
+// Brand row
+var swiper = new Swiper(".brand__latest", {
+    slidesPerView: 5,
+    spaceBetween: 0,
+    grabCursor: true,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: ".brand-row-header__btn--prev",
+        prevEl: ".brand-row-header__btn--next",
+    },
+    breakpoints: {
+        "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        "@0.65": {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        "@1.00": {
+            slidesPerView: 3,
+            spaceBetween: 0,
+        },
+        "@1.65": {
+            slidesPerView: 4,
+            spaceBetween: 0,
+        },
+        "@2.00": {
+            slidesPerView: 5,
+            spaceBetween: 0,
+        },
+    }
 });
 
 // Product row
