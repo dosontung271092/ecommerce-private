@@ -1,4 +1,8 @@
 /* Main slider */
+.slider{
+    margin-top: 15px;
+}
+
 .slider-main__item{
     position: relative;
 }
