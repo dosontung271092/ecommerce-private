@@ -1,5 +1,5 @@
 /* Main slider */
-.slider{
+.slider__section{
     margin-top: 15px;
 }
 
@@ -108,7 +108,7 @@
 }
 
 @media (min-width: 992px) {
-    .slider{
+    .slider__section{
         height: 370px;
         display: flex;
         justify-content: space-between;
