@@ -24,6 +24,14 @@ document.querySelectorAll('.header-middle-right__icon--cart').forEach( e => {
     }
 });
 
+// Modal product filter
+document.querySelectorAll('.product-filter__btn').forEach( e => {
+    e.onclick = () => {
+        document.getElementById('modal__productfilter').style.display = "block";
+    }
+});
+
+
 document.querySelectorAll('.modal__clsicon, .modal__overlay').forEach( e => {
     e.onclick = () => {
         document.querySelectorAll('.modal').forEach((e) => {

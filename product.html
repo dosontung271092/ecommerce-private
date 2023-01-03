@@ -7,12 +7,14 @@
     <title>Ecommerce</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/modal.css">
-    <link rel="stylesheet" href="/assets/css/slider.css">
     <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <link rel="stylesheet" href="/assets/css/product/product.css">
+
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
     <div class="wrapper">
@@ -138,36 +140,67 @@
             </div>
         </div>
 
+        <div class="product__filter">
+            <div class="page-width">
+                <button class="product-filter__btn">
+                    <img class="product-filter__icon" src="./assets/img/icon/filter.png" alt=""> 
+                    <span>Filter</span>
+                </button>
+            </div>
+        </div>
+
         <div class="page-width">
             <div class="product">
                 <div class="product__sidebar">
-                    <h3 class="product-sidebar__header">Sắp xếp</h3>
+                    <h3 class="product-sidebar__header">Lọc sản phẩm</h3>
                     <ul class="product-sidebar__ul">
                         <li class="product-sidebar__li">
-                            <h3 class="product-sidebar-item__title">Price</h3>
+                            <h3 class="product-sidebar-item__title">Giá</h3>
                             <div class="product-sidebar-item__body">
-                                <label for="product-sidebar-price__input--from">From</label>
+                                <label for="product-sidebar-price__input--from">Từ</label>
                                 <input type="text" class="product-sidebar-price__input product-sidebar-price__input--from" id="product-sidebar-price__input--from">
-                                <label for="product-sidebar-price__input--to">To</label>
+                                <label for="product-sidebar-price__input--to">Đến</label>
                                 <input type="text" class="product-sidebar-price__input product-sidebar-price__input--to" id="product-sidebar-price__input--to">
                             </div>
                         </li>
                         <li class="product-sidebar__li">
-                            <h3 class="product-sidebar-item__title">Brand</h3>
+                            <h3 class="product-sidebar-item__title">Nhãn hiệu</h3>
                             <div class="product-sidebar-item__body">
-                                <ul class="product-sidebar-ul">
-                                    <li class="product-sidebar-li">Danh mục</li>
-                                    <li class="product-sidebar-li">Danh mục</li>
-                                    <li class="product-sidebar-li">Danh mục</li>
-                                    <li class="product-sidebar-li">Danh mục</li>
-                                    <li class="product-sidebar-li">Danh mục</li>
-                                    <li class="product-sidebar-li">Danh mục</li>
-                                    <li class="product-sidebar-li">Danh mục</li>
+                                <ul class="product-sidebar-brand-ul">
+                                    <li class="product-sidebar-brand-li">
+                                        <input type="checkbox">
+                                        <label>Nhãn hiệu 1</label>
+                                    </li>
+                                    <li class="product-sidebar-brand-li">
+                                        <input type="checkbox">
+                                        <label>Nhãn hiệu 1</label>
+                                    </li>
+                                    <li class="product-sidebar-brand-li">
+                                        <input type="checkbox">
+                                        <label>Nhãn hiệu 1</label>
+                                    </li>
+                                    <li class="product-sidebar-brand-li">
+                                        <input type="checkbox">
+                                        <label>Nhãn hiệu 1</label>
+                                    </li>
+                                    <li class="product-sidebar-brand-li">
+                                        <input type="checkbox">
+                                        <label>Nhãn hiệu 1</label>
+                                    </li>
+                                    <li class="product-sidebar-brand-li">
+                                        <input type="checkbox">
+                                        <label>Nhãn hiệu 1</label>
+                                    </li>
+                                    <li class="product-sidebar-brand-li">
+                                        <input type="checkbox">
+                                        <label>Nhãn hiệu 1</label>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> 
+                <!-- End product__sidebar -->
                 <div class="product__grid">
 
                     <div class="product-grid__item">
@@ -273,28 +306,29 @@
             </div>
         </div> <!-- End page-width -->
 
-        <section class="service__section">
-            <div class="service__row">
-                <div class="service-row__item service-row__item--separate">
-                    <img src="./assets/img/icon/fast-delivery.png" alt="" class="service-row-item__icon">
-                    <h3 class="service-row-item__text">Miễn phí vận chuyển</h3>
-                </div>
-                <div class="service-row__item service-row__item--separate">
-                    <img src="./assets/img/icon/percent.png" alt="" class="service-row-item__icon">
-                    <h3 class="service-row-item__text">khuyến mại lên đến 50%</h3>
-                </div>
-                <div class="service-row__item service-row__item--separate">
-                    <img src="./assets/img/icon/save-money.png" alt="" class="service-row-item__icon">
-                    <h3 class="service-row-item__text">Voucher 10%</h3>
-                </div>
-                <div class="service-row__item">
-                    <img src="./assets/img/icon/gift.png" alt="" class="service-row-item__icon">
-                    <h3 class="service-row-item__text">Tích điểm nhận quà</h3>
-                </div>
-            </div>
-        </section> <!-- End service -->
+
 
         <footer class="footer">
+            <section class="service__section">
+                <div class="service__row">
+                    <div class="service-row__item service-row__item--separate">
+                        <img src="./assets/img/icon/fast-delivery.png" alt="" class="service-row-item__icon">
+                        <h3 class="service-row-item__text">Miễn phí vận chuyển</h3>
+                    </div>
+                    <div class="service-row__item service-row__item--separate">
+                        <img src="./assets/img/icon/percent.png" alt="" class="service-row-item__icon">
+                        <h3 class="service-row-item__text">khuyến mại lên đến 50%</h3>
+                    </div>
+                    <div class="service-row__item service-row__item--separate">
+                        <img src="./assets/img/icon/save-money.png" alt="" class="service-row-item__icon">
+                        <h3 class="service-row-item__text">Voucher 10%</h3>
+                    </div>
+                    <div class="service-row__item">
+                        <img src="./assets/img/icon/gift.png" alt="" class="service-row-item__icon">
+                        <h3 class="service-row-item__text">Tích điểm nhận quà</h3>
+                    </div>
+                </div>
+            </section> <!-- End service -->
             <div class="page-width">
                 <div class="footer__above">
                     <div class="footer-above-row">
@@ -494,6 +528,73 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+        <!-- End modal cart layout -->
+
+        <!-- Modal product filter layout -->
+        <div class="modal" id="modal__productfilter">
+            <div class="modal__overlay"></div>
+            <div class="modal__content--left">
+                <div class="modal__header">
+                    <div class="modal__width">
+                        <h3 class="modal__title">Lọc sản phẩm</h3>
+                        <img class="modal__clsicon" src="./assets/img/icon/close.png">
+                    </div>
+                </div>
+                <div class="modal__body">
+                    <div class="modal__width">
+                        <div class="product__sidebar">
+                            <ul class="product-sidebar__ul">
+                                <li class="product-sidebar__li">
+                                    <h3 class="product-sidebar-item__title">Giá</h3>
+                                    <div class="product-sidebar-item__body">
+                                        <label for="product-sidebar-price__input--from">Từ</label>
+                                        <input type="text" class="product-sidebar-price__input product-sidebar-price__input--from" id="product-sidebar-price__input--from">
+                                        <label for="product-sidebar-price__input--to">Đến</label>
+                                        <input type="text" class="product-sidebar-price__input product-sidebar-price__input--to" id="product-sidebar-price__input--to">
+                                    </div>
+                                </li>
+                                <li class="product-sidebar__li">
+                                    <h3 class="product-sidebar-item__title">Nhãn hiệu</h3>
+                                    <div class="product-sidebar-item__body">
+                                        <ul class="product-sidebar-brand-ul">
+                                            <li class="product-sidebar-brand-li">
+                                                <input type="checkbox">
+                                                <label>Nhãn hiệu 1</label>
+                                            </li>
+                                            <li class="product-sidebar-brand-li">
+                                                <input type="checkbox">
+                                                <label>Nhãn hiệu 1</label>
+                                            </li>
+                                            <li class="product-sidebar-brand-li">
+                                                <input type="checkbox">
+                                                <label>Nhãn hiệu 1</label>
+                                            </li>
+                                            <li class="product-sidebar-brand-li">
+                                                <input type="checkbox">
+                                                <label>Nhãn hiệu 1</label>
+                                            </li>
+                                            <li class="product-sidebar-brand-li">
+                                                <input type="checkbox">
+                                                <label>Nhãn hiệu 1</label>
+                                            </li>
+                                            <li class="product-sidebar-brand-li">
+                                                <input type="checkbox">
+                                                <label>Nhãn hiệu 1</label>
+                                            </li>
+                                            <li class="product-sidebar-brand-li">
+                                                <input type="checkbox">
+                                                <label>Nhãn hiệu 1</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> 
+                        <!-- End product__sidebar -->
+                    </div>
+                </div>
             </div>
         </div>
 
