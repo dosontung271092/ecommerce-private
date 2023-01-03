@@ -65,6 +65,7 @@ footer{
 
 .footer-below__copyright{
     font-size: 11px;
+    padding-right: 30px;
 }
 
 .footer-below__social{
@@ -77,6 +78,10 @@ footer{
     display: block;
     background-color: var(--background-color);
     border-radius: 5px;
+}
+
+.footer-below-social__link:hover{
+    background-color: var(--btn-hover-color);
 }
 
 .footer-below-social__icon{

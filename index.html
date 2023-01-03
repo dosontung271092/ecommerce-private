@@ -16,7 +16,6 @@
 </head>
 <body>
     <div class="wrapper">
-
         <header class="header">
             <div class="header__top">
                 <div class="page-width">
@@ -96,6 +95,38 @@
                     </ul>
                 </div>
             </nav>
+        </header>
+
+        <header class="header__scroll" id="header__scroll">
+            <div class="header__middle page-width">
+                <div class="header-middle__logo">
+                    <img src="./assets/img/olympus-logo.png" class="header-middle-logo__img" alt="logo">
+                </div>
+                <div class="header-middle__search">
+                    <form action="" class="header-middle-search__form">
+                        <input type="text" class="header-middle-search-form__input" placeholder="Tìm kiếm các sản phẩm ...">
+                        <button class="header-middle-search-form__submit">TÌM KIẾM</button>
+                    </form>
+                </div>
+                <div class="header-middle__right">
+                    <div class="header-middle-right__item header-middle-right__item--myaccount header-middle-right__item--xl">
+                        <a href="#" class="header-middle-right__myacount">Tài khoản của tôi</a>
+                    </div>
+                    <div class="header-middle-right__item header-middle-right__item--sm">
+                        <img class="header-middle-right__icon" id="header-middle-right__icon--search" src="./assets/img/icon/search.png">
+                    </div>
+                    <div class="header-middle-right__item header-middle-right__item--noxl">
+                        <img class="header-middle-right__icon" src="./assets/img/icon/user.png">
+                    </div>
+                    <div class="header-middle-right__item header-middle-right__item--cart">
+                        <img class="header-middle-right__icon" id="header-middle-right__icon--cart" src="./assets/img/icon/cart.png">
+                        <span class="header-middle-right-cart__notification">3</span>
+                    </div>
+                    <div class="header-middle-right__item header-middle-right__item--sm">
+                        <img class="header-middle-right__icon header-middle-right__icon--menu" id="header-middle-right__icon--menu" src="./assets/img/icon/bar.png">
+                    </div>
+                </div>
+            </div>
         </header>
 
         <div class="content">
@@ -313,6 +344,45 @@
                     </div>
                 </div> <!-- End product -->
 
+                <div class="banner">
+                    <div class="banner__item">
+                        <img class="banner__img" src="./assets/img/slide/slide01.jpg">
+                        <div class="banner__content">
+                            <p class="banner__sale">Sale 50%</p>
+                            <h3 class="banner__title">
+                                Chăm sóc da tự nhiên
+                            </h3>
+                            <button class="banner__viewbtn">
+                                xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <img class="banner__img" src="./assets/img/slide/slide01.jpg">
+                        <div class="banner__content">
+                            <p class="banner__sale">Sale 50%</p>
+                            <h3 class="banner__title">
+                                Chăm sóc da tự nhiên
+                            </h3>
+                            <button class="banner__viewbtn">
+                                xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <img class="banner__img" src="./assets/img/slide/slide01.jpg">
+                        <div class="banner__content">
+                            <p class="banner__sale">Sale 50%</p>
+                            <h3 class="banner__title">
+                                Chăm sóc da tự nhiên
+                            </h3>
+                            <button class="banner__viewbtn">
+                                xem chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div><!-- Best product sale -->
+
                 <div class="post">
                     <div class="post__latest swiper">
                     
@@ -448,9 +518,13 @@
                         <img src="./assets/img/icon/percent.png" alt="" class="service-row-item__icon">
                         <h3 class="service-row-item__text">khuyến mại lên đến 50%</h3>
                     </div>
-                    <div class="service-row__item">
+                    <div class="service-row__item service-row__item--separate">
                         <img src="./assets/img/icon/save-money.png" alt="" class="service-row-item__icon">
                         <h3 class="service-row-item__text">Voucher 10%</h3>
+                    </div>
+                    <div class="service-row__item">
+                        <img src="./assets/img/icon/gift.png" alt="" class="service-row-item__icon">
+                        <h3 class="service-row-item__text">Tích điểm nhận quà</h3>
                     </div>
                 </div>
             </div> <!-- End service -->
@@ -662,6 +736,17 @@
 
     </div> <!-- Wrapper -->
 
+    <script>
+        
+        window.onscroll = function (e) {
+            if( window.scrollY >= 200 ){
+                document.getElementById('header__scroll').style.display = "block";
+            }else{
+                document.getElementById('header__scroll').style.display = "none";
+            }
+        };
+
+    </script>
     <script src="/assets/js/swiper-bundle.min.js"></script>
     <script src="/assets/js/swiper-config.js"></script>
     <script src="/assets/js/modal.js"></script>

@@ -159,6 +159,8 @@
 .post-row__item{
     display: relative;
     border-radius: 5px;
+    background-color: var(--background-color);
+    padding: 15px;
 }
 
 .post-row__content{
@@ -172,7 +174,7 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    background-color: var(--background-color);
+    
     overflow: hidden;
     border-radius: 5px;
 }
@@ -222,15 +224,20 @@
 
 }
 
+.service__row{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 @media (min-width: 992px) {
     .service{
         padding: 17px 0;
     }
-}
 
-.service__row{
-    display: flex;
-    justify-content: space-between;
+    .service__row{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
 }
 
 .service-row__item{
@@ -262,6 +269,94 @@
 
 @media (min-width: 768px) {
     .service-row-item__text{
-        font-size: 14px;
+        font-size: 15px;
     }
+}
+
+
+/* banner */
+.banner{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__item{
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.banner__img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    object-position: right top;
+    object-fit: cover;
+    height: 200px;
+}
+
+@media (min-width: 576px) {
+    .banner{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .banner__item{
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner__item{
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner__img {
+        height: 230px;
+    }
+}
+
+.banner__content{
+    position: absolute;
+    left:20px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.banner__sale{
+    margin: 0;
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.banner__title{
+    margin: 10px 0 0 0;
+    font-size: 22px;
+    color: var(--title-color);
+}
+
+@media (min-width: 992px) {
+    .banner__title{
+        font-size: 25px;
+    }
+}
+
+.banner__viewbtn{
+    margin-top: 15px;
+    font-size: 15px;
+    text-decoration: underline;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+
+.banner__viewbtn:hover{
+    background-color: var(--primary-hover-color);
+    cursor: pointer;
 }

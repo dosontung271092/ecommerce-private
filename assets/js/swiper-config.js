@@ -58,19 +58,19 @@ var swiper = new Swiper(".post__latest", {
         },
         "@0.65": {
             slidesPerView: 2,
-            spaceBetween: 20,
+            // spaceBetween: 20,
         },
         "@1.00": {
             slidesPerView: 3,
-            spaceBetween: 25,
+            // spaceBetween: 25,
         },
         "@1.65": {
             slidesPerView: 4,
-            spaceBetween: 25,
+            // spaceBetween: 25,
         },
         "@2.00": {
             slidesPerView: 5,
-            spaceBetween: 30,
+            // spaceBetween: 30,
         },
     }
 });
