@@ -121,9 +121,13 @@
     margin: 15px 0 0 0;
     font-size: 14px;
     height: 42px;
-    font-weight: 100;
     line-height: 20px;
     overflow: hidden;
+}
+
+.product-grid__brand{
+    height: 20px;
+    color: var(--text-color);
 }
 
 .product-grid__price{
